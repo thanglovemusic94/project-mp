@@ -1,0 +1,47 @@
+.slick-prev,
+.slick-next {
+  width: 48px;
+  height: 48px;
+  z-index: 9;
+
+  &::before {
+    display: none;
+  }
+}
+.slick-prev {
+  left: -68px;
+}
+.slick-next {
+  right: -68px;
+}
+
+.main-slider {
+  .slick-prev {
+    left: 50%;
+    transform: translate(-600px, -50%);
+  }
+  .slick-next {
+    right: 50%;
+    transform: translate(600px, -50%);
+  }
+
+  .slick-dots {
+    bottom: 30px;
+
+    button {
+      &::before {
+        display: none;
+      }
+      background-color: #fff;
+      border: 0.5px solid $b500;
+      width: 16px;
+      height: 16px;
+      border-radius: 50px;
+    }
+    li.slick-active {
+      button {
+        background-color: $b500;
+      }
+    }
+  }
+}

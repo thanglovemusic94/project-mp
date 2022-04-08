@@ -1,0 +1,23 @@
+{
+  "appId": "com.carcloth",
+  "appName": "carcloth",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "plugins": {
+	"GoogleAuth": {
+		"scopes": ["profile","email"],
+	    "serverClientId": "61254803402-vtucjevu7v08gq8vno2ekrpc5bnd99ed.apps.googleusercontent.com",
+		"androidClientId": "61254803402-efvg0dr4ge0nif9h2ogc6rde4jrclpch.apps.googleusercontent.com",
+		"forceCodeForRefreshToken": true
+	}
+  },
+  "server": {
+    "allowNavigation": [
+        "*",
+        "https://service.iamport.kr",
+        "https://chaot.co.kr/",
+        "https://chaot.kr/",
+        "https://accounts.kakao.com/"
+    ]
+}
+}

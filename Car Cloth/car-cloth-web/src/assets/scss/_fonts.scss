@@ -1,0 +1,82 @@
+// Font Noto Sans KR
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: local("Noto Sans KR Medium"),
+    url("../font/NotoSansKR/NotoSansKR-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: local("Noto Sans KR Regular"),
+    url("../font/NotoSansKR/NotoSansKR-Regular.otf") format("opentype");
+}
+
+// Font Spoqa Han Sans Neo
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 700;
+  src: local("Spoqa Han Sans Neo Bold"),
+    url("../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  src: local("Spoqa Han Sans Neo Medium"),
+    url("../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 400;
+  src: local("Spoqa Han Sans Neo Regular"),
+    url("../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 300;
+  src: local("Spoqa Han Sans Neo Light"),
+    url("../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 100;
+  src: local("Spoqa Han Sans Neo Thin"),
+    url("../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff2") format("woff2");
+}
+
+// Font Gmarket Sans
+@font-face {
+  font-family: "Gmarket Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/GmarketSansTTF/GmarketSansTTFLight.ttf");
+}
+
+@font-face {
+  font-family: "Gmarket Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/GmarketSansTTF/GmarketSansTTFMedium.ttf");
+}
+
+@font-face {
+  font-family: "Gmarket Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/GmarketSansTTF/GmarketSansTTFBold.ttf");
+}
+
+.font-gmarket {
+  font-family: $font-gmarket;
+}
+
+.font-noto {
+  font-family: $font-noto;
+}
+.font-spoqa {
+  font-family: $font-family-base;
+}

@@ -1,0 +1,19 @@
+server:
+  port: 8080
+# Expand properties by maven pom
+spring:
+  application:
+    name: @project.artifactId@
+  jpa:
+    open-in-view: false
+# Config hibernate batch insert size
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 5
+        enable_lazy_load_no_trans: true
+# Logging Levels Configuration
+logging:
+  level:
+    com.mintpot.carcloth.security.*: debug
+    org.springframework.security: DEBUG

@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "mintpot.services.images",
+      "type": "com.mintpot.pii.service.ImageService",
+      "defaultValue": "com.mintpot.pii.service.impl.S3ImageServiceImpl",
+      "description": "Image Service Configuration."
+  }
+] }

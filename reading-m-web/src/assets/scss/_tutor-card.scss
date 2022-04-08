@@ -1,0 +1,68 @@
+.tutor-card {
+    cursor: pointer;
+    background-color: #fff;
+    margin-bottom: 30px;
+
+    .tc-photo {
+        border: 1px solid #d9d9d9;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .tc-deadline {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 84px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 10px 0px;
+        background: rgba(65, 68, 76, 0.8);
+        color: #fff;
+        text-align: center;
+    }
+
+    .tc-body {
+        padding: 14px 0;
+    }
+    .tc-class {
+        font-size: 19px;
+        font-weight: 700;
+    }
+    .tc-name {
+        font-size: 19px;
+        color: #000;
+        font-weight: 500;
+        font-family: $font-family-base;
+    }
+    .tc-intro {
+        color: $g500;
+    }
+}
+.main-tutor {
+    .tutor-card {
+        border: 1px solid $g300;
+        border-radius: 10px;
+    }
+    .tc-photo {
+        border: none;
+    }
+    .tc-name {
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .tc-body {
+        text-align: center;
+        padding: 14px;
+    }
+}
+@include media-breakpoint-down(sm) {
+    .tutor-card {
+        width: 210px !important;
+        display: block !important;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,57 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@mixin box-fluid($mw) {
+    max-width: $mw + px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+@mixin input-width($ipw) {
+    @include media-breakpoint-up(lg) {
+        width: $ipw + px !important;
+    }
+}
+@mixin button-width($btw) {
+    @include media-breakpoint-up(lg) {
+        width: $btw + px !important;
+    }
+}
+@mixin max-width($maxw) {
+    max-width: $maxw + px;
+    width: 100%;
+}
+@mixin modal-width($mdw) {
+    max-width: $mdw + px;
+    width: 96%;
+}
+@mixin flex-center() {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+        border-radius: 100px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+
+    // For Internet Explorer
+    & {
+        scrollbar-face-color: $foreground-color;
+        scrollbar-track-color: $background-color;
+    }
+}

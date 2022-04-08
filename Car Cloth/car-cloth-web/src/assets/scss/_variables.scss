@@ -1,0 +1,231 @@
+// Grid customize
+$grid-gutter-width: 2rem;
+
+$font-family-base: "Spoqa Han Sans Neo", "sans-serif";
+$font-gmarket: "Gmarket Sans";
+$font-noto: "Noto Sans KR", sans-serif;
+
+$z-index-100: 100;
+
+$white: #ffffff;
+
+$black-30: #f5f5f5;
+$black-50: #f7f7f7;
+$black-60: #f6f6f6;
+$black-70: #f2f2f2;
+$black-80: #ebebeb;
+$black-100: #e9e9e9;
+$black-200: #d9d9d9;
+$black-250: #dedddb;
+$black-300: #c4c4c4;
+$black-400: #9d9d9d;
+$black-500: #7b7b7b;
+$black-550: #595959;
+$black-600: #555555;
+$black-700: #434343;
+$black-800: #262626;
+$black-900: #222222;
+$black: #000000;
+
+$green-50: #e0f3f2;
+$green-300: #44bbb2;
+$green-400: #00aca1;
+
+$red: #ff3347;
+
+$blue: #3f8ae0;
+$blue-50: #e6eaf8;
+$blue-50-op-50: #e6eaf899;
+$blue-50-op-30: #f7f9fd;
+$blue-100: #c1c9ee;
+$blue-300: #6a84d7;
+$blue-400: #4469cf;
+$blue-500: #004fc6;
+$blue-700: #003db0;
+
+$body-color: $black;
+
+// scss-docs-start input-btn-variables
+$input-border-color: $black-700;
+$input-placeholder-color: $black-400;
+$form-feedback-icon-valid: none;
+$form-feedback-icon-invalid: none;
+//$nav-header-height: 48px;
+$nav-header-height: 44px;
+$nav-header-height-ios: 84px;
+$nav-bottom-height: 64px;
+$swipe-item-min-height: 116px;
+
+// Input variable customize
+$input-focus-box-shadow: none;
+
+$enable-negative-margins: true;
+
+$custom-colors: (
+  "transparent": transparent,
+  //BLACK-------------------------------
+  "black-30": $black-30,
+  "black-50": $black-50,
+  "black-60": $black-60,
+  "black-70": $black-70,
+  "black-80": $black-80,
+  "black-100": $black-100,
+  "black-200": $black-200,
+  "black-300": $black-300,
+  "black-400": $black-400,
+  "black-500": $black-500,
+  "black-550": $black-550,
+  "black-600": $black-600,
+  "black-700": $black-700,
+  "black-800": $black-800,
+  "black-900": $black-900,
+  //RED-------------------------------
+  "red": $red,
+  //GREEN-------------------------------
+  "green-50": $green-50,
+  "green-300": $green-300,
+  "green-400": $green-400,
+  //BLUE-------------------------------
+  "blue": $blue,
+  "blue-50": $blue-50,
+  "blue-50-op-50": $blue-50-op-50,
+  "blue-50-op-30": $blue-50-op-30,
+  "blue-100": $blue-100,
+  "blue-300": $blue-300,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-700": $blue-700,
+  "white": $white,
+);
+
+// scss-docs-start font-sizes
+// $font-weight-custom: (
+//   //light: $font-weight-light, //300
+//   //lighter: $font-weight-lighter,
+//   //normal: $font-weight-normal, //400
+//   //bold: $font-weight-bold, //700
+//   //bolder: $font-weight-bolder,
+//   //custom
+//   500: 500,
+//   200: 200
+// ) !default;
+
+$font-weight-medium: 500;
+
+$line-height-custom: (
+  13: 13.77px,
+  14: 14px,
+  15: 15.02px,
+  21: 21px,
+  22: 22px,
+  31: 31px,
+) !default;
+
+// scss-docs-start font-sizes
+$font-size-custom: (
+  10: 10px,
+  11: 11px,
+  12: 12px,
+  13: 13px,
+  14: 14px,
+  15: 15px,
+  16: 16px,
+  17: 17px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  25: 25px,
+  30: 30px,
+  35: 35px,
+) !default;
+// scss-docs-end font-sizes
+
+// scss-docs-start border-radius
+$border-radius-custom: (
+  3px: 3px,
+  4px: 4px,
+  8px: 8px,
+  9px: 9px,
+  10px: 10px,
+  14px: 14px,
+  16px: 16px,
+  18px: 18px,
+  20px: 20px,
+) !default;
+
+// scss-docs-end border-radius
+
+$border-width-custom: (
+  6: 0.4px,
+  8: 0.8px,
+) !default;
+
+//Spacing padding, margin
+$spacer: 1rem;
+$spacers-custom: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  //custom
+  1px: 1px,
+  2px: 2px,
+  3px: 3px,
+  4px5: 4.5px,
+  4px46: 4.46px,
+  4px88: 4.88px,
+  5px: 5px,
+  6px: 6px,
+  7px: 7px,
+  7px75: 7.75px,
+  8px: 8px,
+  8px4: 8.4px,
+  9px: 9px,
+  9px12: 9.12px,
+  9px37: 9.37px,
+  9px38: 9.38px,
+  10px: 10px,
+  11px: 11px,
+  12px: 12px,
+  13px37: 13.37px,
+  12px6: 12.6px,
+  17px75: 17.75px,
+  13px: 13px,
+  14px: 14px,
+  15px: 15px,
+  18px: 18px,
+  20px: 20px,
+  21px: 21px,
+  21px75: 21.75px,
+  26px: 26px,
+  28px: 28px,
+  32px: 32px,
+  40px: 40px,
+  60px: 60px,
+  46px: 46px,
+  89px: 89px,
+);
+
+// scss-docs-start gutters
+$gutters: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6px: 6px,
+);
+// scss-docs-end gutters
+
+// Button customize variable
+
+$btn-border-radius: 0;
+$btn-font-weight: 500;
+$btn-font-size: 14px;
+$btn-padding-y: 8px;
+$btn-active-box-shadow: none;
+$btn-focus-width: 0;

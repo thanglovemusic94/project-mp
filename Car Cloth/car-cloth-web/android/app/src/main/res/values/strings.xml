@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">carcloth</string>
+    <string name="title_activity_main">carcloth</string>
+    <string name="package_name">com.carcloth</string>
+    <string name="custom_url_scheme">mycarclothapp</string>
+    <string name="custom_url_host">com.carcloth</string>
+    <string name="server_client_id">61254803402-vtucjevu7v08gq8vno2ekrpc5bnd99ed.apps.googleusercontent.com</string>
+</resources>

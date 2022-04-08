@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>61254803402-cd10bohojn7ne69k64bef795633n13l9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.61254803402-cd10bohojn7ne69k64bef795633n13l9</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>61254803402-efvg0dr4ge0nif9h2ogc6rde4jrclpch.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDPs0k9dDSb8ufjETxB9k9-eo-cGK5IUkI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>61254803402</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.carcloth.dev</string>
+	<key>PROJECT_ID</key>
+	<string>carcloth-337408</string>
+	<key>STORAGE_BUCKET</key>
+	<string>carcloth-337408.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:61254803402:ios:84f2cee9f4171fbee17933</string>
+</dict>
+</plist>

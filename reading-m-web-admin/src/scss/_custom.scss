@@ -1,0 +1,173 @@
+// Here you can add other styles
+// Table
+.td203 {
+    width: 203px;
+    background: #ebedef;
+    vertical-align: middle !important;
+    text-align: center;
+}
+.tdfull {
+    background-color: #c4c9d0;
+    text-align: center;
+}
+// Buttons
+.btn.active {
+    @extend .btn-dark;
+}
+.btn-group-custom {
+    .btn {
+        width: 85px;
+    }
+}
+.btn-group-custom-1 {
+    .btn {
+        width: 130px;
+    }
+}
+/* Customize Form
+================================== */
+.fieldset-custom {
+    background-color: $light;
+    padding: 15px;
+
+    h4 {
+        font-size: 20px;
+        width: 100px;
+        background-color: #b1b7c1;
+        text-align: center;
+        padding: 5px;
+    }
+
+    label {
+        justify-content: left;
+        width: 100px;
+    }
+    input {
+        width: 300px !important;
+    }
+}
+
+.react-datepicker-wrapper {
+    input {
+        @extend .form-control;
+    }
+}
+
+.radio-group-custom {
+    display: flex;
+
+    .form-check-input {
+        display: none;
+
+        &:checked ~ .form-check-label {
+            @extend .bg-dark;
+            color: #fff;
+        }
+    }
+
+    .form-check {
+        padding-left: 0 !important;
+        margin-right: 10px;
+    }
+
+    .form-check-label {
+        // background-color: $bg-secondary;
+        @extend .bg-secondary, .btn;
+        width: 130px;
+    }
+}
+
+.radio-group-custom.rgc100 .form-check-label {
+    width: 100px;
+}
+
+textarea:focus,
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='time']:focus,
+input[type='week']:focus,
+input[type='number']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='color']:focus,
+.uneditable-input:focus,
+.custom-select:focus,
+.page-link:focus {
+    border-color: #ccc;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #ebedef;
+}
+
+.btn-upload-file {
+    position: relative;
+
+    input[type='file'] {
+        display: none;
+    }
+
+    .btnu-label {
+        @extend .btn, .btn-dark;
+    }
+}
+
+/* Customize sidebar
+================================== */
+.c-sidebar {
+    .c-sidebar-brand {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px 0;
+        text-align: center;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+// Add new style
+.selected-member-list {
+    margin: 20px 0;
+
+    ol,
+    ul {
+        display: inline-block;
+        padding-left: 15px;
+    }
+
+    li {
+        margin-bottom: 10px;
+
+        &:hover {
+            span {
+                color: $danger;
+            }
+        }
+    }
+    span {
+        padding: 0 20px 0 10px;
+    }
+
+    .c-icon:not(.c-icon-c-s):not(.c-icon-custom-size) {
+        width: 20px;
+        height: 20px;
+        &:hover {
+            cursor: pointer;
+            color: $danger;
+        }
+    }
+}
+.icon-star-custom {
+    .c-icon {
+        margin: 0 2px;
+        color: rgb(240, 179, 11);
+        width: 18px !important;
+        height: 18px !important;
+    }
+}

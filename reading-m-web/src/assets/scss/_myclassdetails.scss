@@ -1,0 +1,459 @@
+// MyClass Details
+
+.myclassdetails-header {
+    position: relative;
+    color: #fff;
+    padding-top: 1px;
+
+    &.m500 {
+        background-color: $m500;
+    }
+
+    &.b400 {
+        background-color: $b400;
+    }
+
+    .lcicon-flag-big {
+        top: 0;
+        left: 15px;
+    }
+    h3 {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+    .myclassdetails-date {
+        color: $m200;
+        font-size: 14px;
+    }
+
+    .btn-consult {
+        background-color: #fff;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        font-weight: 700;
+    }
+
+    .goal-category {
+        border: 1px solid #fff;
+        border-radius: 3px;
+        width: 80px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+        font-weight: 700;
+        display: inline-block;
+        text-align: center;
+        margin-right: 15px;
+        vertical-align: bottom;
+    }
+}
+
+.myclassdetails-header-bottom {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.myclassdetails-teachername {
+    font-size: 14px;
+    .name {
+        font-weight: 700;
+    }
+}
+
+.myclassbook {
+    .myclassdetails-header-top {
+        padding-left: 95px;
+    }
+    .myclassdetails-header {
+        .myclassdetails-teachername {
+            margin-left: 15px;
+        }
+    }
+
+    .btn-consult {
+        color: $m500;
+    }
+}
+
+.myclassgoal {
+    .myclassdetails-header-top {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .myclassdetails-teachername {
+        display: block;
+    }
+    .btn-consult {
+        color: $b500;
+    }
+}
+
+.myclassdetails-avatar {
+    width: 120px;
+    text-align: center;
+    img {
+        width: 56px;
+        height: 56px;
+        border: 1px solid $g200;
+        border-radius: 100%;
+    }
+}
+
+.myclassdetails-classcontent {
+    width: 275px;
+    padding: 20px;
+    background-color: $g50;
+    border: 1px solid $g300;
+    border-radius: 0px 10px 10px 10px;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url('../../assets/icons/corner.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 21px;
+        height: 24px;
+        position: absolute;
+        top: -1px;
+        left: -21px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.myclassdetails-notify {
+    color: $g700;
+    background-color: $g100;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 6px 20px;
+    line-height: 1.2;
+
+    .label,
+    i {
+        flex-shrink: 0;
+    }
+
+    .label {
+        font-weight: 700;
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    &.danger {
+        color: $danger;
+        background-color: rgba(242, 21, 88, 0.05);
+    }
+
+    &.data-input {
+        border-top: 1px solid $g300;
+        border-bottom: 1px solid $g300;
+
+        .form-control {
+            height: 36px;
+        }
+    }
+}
+
+.myclassdetails-bookname {
+    font-size: 18px;
+    font-weight: 500;
+
+    .divider {
+        margin: 0 5px;
+        color: $m500;
+    }
+}
+
+.myclassdetails-materials {
+    margin-top: 20px;
+    @include media-breakpoint-down(md) {
+        margin-bottom: -1.5rem;
+    }
+}
+
+.myclassdetails-right {
+    padding: 20px 20px 0;
+
+    .btn-attachment {
+        text-align: center;
+        color: $g500;
+        font-weight: 700;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .no-file {
+        .btn-attachment {
+            color: $g300;
+        }
+        .lcicon-folder {
+            background-image: url('../../assets/icons/folder-gray.png');
+        }
+    }
+}
+
+.myclassdetails-footer-top {
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+}
+
+.myclassdetails-labelweek {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 20px 20px 0 0;
+
+    &.m500 {
+        background-color: $m500;
+    }
+    &.b500 {
+        background-color: $b500;
+    }
+}
+.tutorclass-name {
+    font-size: 24px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.newspaper-selected {
+    span {
+        border: 1px solid $g300;
+        padding: 5px 10px;
+        display: inline-block;
+        border-radius: 3px;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .myclassdetails-left {
+        border-right: 1px solid $g300;
+    }
+    .myclassdetails-header {
+        height: 120px;
+        border: 1px solid transparent;
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        align-items: center;
+
+        &.m500 {
+            border-color: #0095a4;
+        }
+
+        &.b400 {
+            border-color: $b500;
+        }
+
+        .lcicon-flag-big {
+            top: -8px;
+            left: 46px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+        .myclassdetails-teachername {
+            font-size: 18px;
+            position: absolute;
+            bottom: 12px;
+            right: 25px;
+        }
+        .myclassdetails-date {
+            font-size: 18px;
+        }
+        .btn-consult {
+            width: 140px;
+            margin-left: 15px;
+        }
+    }
+
+    .myclassbook {
+        .myclassdetails-header-top {
+            padding-left: 160px;
+        }
+    }
+
+    .myclassgoal {
+        .myclassdetails-header {
+            height: 86px;
+
+            .myclassdetails-teachername {
+                bottom: 16px;
+            }
+        }
+        .myclassdetails-header-top {
+            padding: 0 25px;
+        }
+    }
+
+    .myclassdetails-body {
+        border-right: 1px solid $g300;
+        border-left: 1px solid $g300;
+    }
+
+    .myclassdetails-avatar {
+        width: 200px;
+
+        @include flex-center;
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .myclassdetails-classcontent {
+        width: 489px;
+    }
+
+    .myclassdetails-uploadfile {
+        .uploadfile-custom {
+            border-top: 1px solid $g300;
+        }
+    }
+    .myclassdetails-notify {
+        font-size: 15px;
+
+        .label {
+            font-size: 16px;
+        }
+    }
+    .myclassdetails-bookname,
+    .myclassdetails-materials {
+        padding-left: 200px;
+    }
+
+    .myclassdetails-labelweek {
+        width: 245px;
+    }
+
+    .myclassdetails-footer {
+        border: 1px solid $g300;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .myclassdetails-footer-top {
+        padding: 28px 20px;
+
+        &.m100 {
+            background-color: $m100;
+            border-color: $m400;
+        }
+        &.b100 {
+            background-color: $b100;
+            border-color: $b400;
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+    }
+
+    .myclassdetails-footer-bottom {
+        background-color: $g200;
+        padding: 21px 0;
+    }
+}
+@include media-breakpoint-down(md) {
+    .myclassdetails-header {
+        padding: 6px 0 16px 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        .myclassdetails-teachername {
+            margin-left: 0 !important;
+            &.pd-left {
+                padding-left: 85px;
+            }
+        }
+    }
+    .myclassdetails-notify {
+        padding: 13px 20px;
+        margin-left: -15px;
+        margin-right: -15px;
+        background-color: transparent;
+        &.data-input {
+            border: 0;
+        }
+    }
+    .myclassdetails-avatar {
+        text-align: left;
+    }
+
+    .myclassdetails-classcontent {
+        margin-left: -22px;
+        width: 100%;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .myclassdetails-footer {
+        margin-bottom: -10px;
+        .liveclass-time {
+            font-size: 14px;
+            color: $g500;
+        }
+    }
+    .myclassdetails-uploadfile-mobile {
+        border-top: 4px solid $g100;
+        border-bottom: 4px solid $g100;
+        margin: 20px -15px 20px;
+        padding: 8px 15px 0 15px;
+    }
+
+    .myclassdetails-right {
+        padding: 20px 0 18px;
+        .dropdown-menu {
+            border: 0;
+        }
+        .dropdown-item {
+            border-bottom: 1px solid $g200;
+            border-left: 1px solid $g200;
+            border-right: 1px solid $g200;
+            padding: 12px 15px;
+            &:first-child {
+                border-top: 1px solid $g200;
+            }
+        }
+        .icon-attend {
+            margin: 10px 0;
+            float: right;
+        }
+    }
+    .uploadfile-label {
+        font-size: 14px;
+    }
+    .uploadfile-button {
+        .btn-upload {
+            height: 32px;
+            font-size: 14px;
+            line-height: 35px;
+            padding: 0 20px;
+            margin: 0;
+        }
+    }
+    .uploadfile-name {
+        margin-top: 8px;
+    }
+
+    .myclassdetails-footer-top {
+        padding: 0;
+    }
+    .liveclass-title {
+        margin-bottom: 30px;
+    }
+    .tutorclass-name {
+        font-size: 20px;
+    }
+}

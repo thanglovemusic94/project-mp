@@ -1,0 +1,1 @@
+export const settlements = {COMPLETE: '정산완료', NOT_SETTLED: '미정산', WAIT: '정산 대기 중' };

@@ -1,0 +1,126 @@
+/* Main page
+=================================== */
+.main-page {
+    .lc-body {
+        padding: 0;
+        .container {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+.main-section {
+    padding-bottom: 50px;
+}
+
+.section-title {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.video-link {
+    border: 16px solid #000;
+    border-radius: 5px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.main-container {
+    max-width: 1230px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+.slick-slide {
+    padding: 0 4px;
+}
+
+.notice-link {
+    font-family: $font-nanum;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 488px;
+    height: 80px;
+    max-width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 160px;
+
+    &:hover {
+        span {
+            color: #fff;
+        }
+    }
+
+    [class^='lcicon'] {
+        position: absolute;
+        left: 80px;
+    }
+
+    &.liveclass-platform {
+        background: linear-gradient(
+            123.37deg,
+            #3bc9d8 -61.48%,
+            #0095a4 101.27%,
+            rgba(0, 149, 164, 0) 101.29%
+        );
+
+        border: 1px solid #0095a4;
+    }
+
+    &.tutor-process {
+        background: linear-gradient(
+            117.47deg,
+            #467edf -13.75%,
+            #1c4da1 106.11%
+        );
+        border: 1px solid #1c4da1;
+    }
+    &.tutor-apply {
+        background: #41444c;
+        border: 1px solid #000000;
+    }
+    &.liveclass-introduction {
+        background: linear-gradient(250.09deg, #f3f3f3 -10.22%, #fafafa 93.9%);
+        border: 1px solid #c7c7ca;
+        color: $g700;
+
+        &:hover {
+            span {
+                color: $g700;
+            }
+        }
+
+        .lcicon-liveclassIntroduction {
+            left: 90px;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        width: 372px;
+        font-size: 22px;
+        padding-left: 109px;
+
+        [class^='lcicon'] {
+            left: 27px;
+        }
+        &.liveclass-introduction {
+            .lcicon-liveclassIntroduction {
+                left: 34px;
+            }
+        }
+    }
+}
+.modal-mainpopup {
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+

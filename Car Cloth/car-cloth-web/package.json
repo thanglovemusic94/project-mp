@@ -1,0 +1,68 @@
+{
+    "name": "car-cloth-web",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@awesome-cordova-plugins/ios-aswebauthenticationsession-api": "^5.39.1",
+        "@capacitor/android": "^3.3.4",
+        "@capacitor/app": "^1.1.0",
+        "@capacitor/app-launcher": "^1.0.8",
+        "@capacitor/browser": "^1.0.7",
+        "@capacitor/camera": "^1.2.3",
+        "@capacitor/cli": "^3.3.4",
+        "@capacitor/core": "^3.3.4",
+        "@capacitor/device": "^1.1.2",
+        "@capacitor/geolocation": "^1.3.1",
+        "@capacitor/ios": "^3.3.4",
+        "@capacitor/network": "^1.0.6",
+        "@capacitor/push-notifications": "^1.0.9",
+        "@codetrix-studio/capacitor-google-auth": "^3.0.2",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "axios": "^0.24.0",
+        "bootstrap": "5.1.3",
+        "cordova-plugin-ios-aswebauthenticationsession-api": "^1.1.5",
+        "env-cmd": "^10.1.0",
+        "firebase": "^8.2.2",
+        "react": "^17.0.2",
+        "react-bootstrap": "^2.0.0",
+        "react-datepicker": "^4.3.0",
+        "react-dom": "^17.0.2",
+        "react-google-login": "^5.2.2",
+        "react-infinite-scroll-component": "^6.1.0",
+        "react-router-dom": "^5.3.0",
+        "react-scripts": "^4.0.3",
+        "react-webcam": "^6.0.0",
+        "sass": "^1.43.4",
+        "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "start:dev": "env-cmd -f .env.dev react-scripts start",
+        "start:prd": "env-cmd -f .env.prd react-scripts start",
+        "build": "react-scripts build",
+        "build:dev": "env-cmd -f .env.dev react-scripts build",
+        "build:prd": "env-cmd -f .env.prd react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

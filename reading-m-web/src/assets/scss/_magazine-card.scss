@@ -1,0 +1,45 @@
+.main-magazine {
+  .title-link a {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000;
+  }
+  .magazine-card {
+    margin-bottom: 0;
+  }
+}
+
+.magazine-card {
+  border: 1px solid $g300;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 30px;
+
+  .mc-photo {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+  }
+
+  .mc-body {
+    text-align: center;
+    padding: 14px;
+  }
+  .mc-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .mc-date {
+    font-size: 16px;
+    color: $g500;
+    margin-bottom: 10px;
+  }
+  .btn {
+    font-size: 18px;
+    font-weight: 500;
+    height: 32px;
+    width: 140px;
+    line-height: 28px;
+  }
+}

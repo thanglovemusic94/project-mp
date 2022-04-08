@@ -1,0 +1,250 @@
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$all-colors: map-merge-multiple($custom-colors);
+$utilities: map-merge(
+  $utilities,
+  (
+    //https://getbootstrap.com/docs/5.1/customize/color/
+    //https://getbootstrap.com/docs/5.1/utilities/api/
+    "color":
+      map-merge(
+        map-get($utilities, "color"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "color"), "values"),
+              ($all-colors)
+            ),
+        )
+      ),
+    "background-color":
+      map-merge(
+        map-get($utilities, "background-color"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "background-color"), "values"),
+              ($all-colors)
+            ),
+        )
+      ),
+    "border-color":
+      map-merge(
+        map-get($utilities, "border-color"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "border-color"), "values"),
+              ($all-colors)
+            ),
+        )
+      ),
+    // Margin utilities
+    // scss-docs-start utils-spacing
+    "margin":
+      (
+        responsive: true,
+        property: margin,
+        class: m,
+        values:
+          map-merge(
+            $spacers-custom,
+            (
+              auto: auto,
+            )
+          ),
+      ),
+    "margin-x": (
+      responsive: true,
+      property: margin-right margin-left,
+      class: mx,
+      values:
+        map-merge(
+          $spacers-custom,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "margin-y": (
+      responsive: true,
+      property: margin-top margin-bottom,
+      class: my,
+      values:
+        map-merge(
+          $spacers-custom,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "margin-top": (
+      responsive: true,
+      property: margin-top,
+      class: mt,
+      values:
+        map-merge(
+          $spacers-custom,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "margin-end": (
+      responsive: true,
+      property: margin-right,
+      class: me,
+      values:
+        map-merge(
+          $spacers-custom,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "margin-bottom": (
+      responsive: true,
+      property: margin-bottom,
+      class: mb,
+      values:
+        map-merge(
+          $spacers-custom,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "margin-start": (
+      responsive: true,
+      property: margin-left,
+      class: ms,
+      values:
+        map-merge(
+          $spacers-custom,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    // Padding utilities
+    "padding":
+      (
+        responsive: true,
+        property: padding,
+        class: p,
+        values: $spacers-custom,
+      ),
+    "padding-x": (
+      responsive: true,
+      property: padding-right padding-left,
+      class: px,
+      values: $spacers-custom,
+    ),
+    "padding-y": (
+      responsive: true,
+      property: padding-top padding-bottom,
+      class: py,
+      values: $spacers-custom,
+    ),
+    "padding-top": (
+      responsive: true,
+      property: padding-top,
+      class: pt,
+      values: $spacers-custom,
+    ),
+    "padding-end": (
+      responsive: true,
+      property: padding-right,
+      class: pe,
+      values: $spacers-custom,
+    ),
+    "padding-bottom": (
+      responsive: true,
+      property: padding-bottom,
+      class: pb,
+      values: $spacers-custom,
+    ),
+    "padding-start": (
+      responsive: true,
+      property: padding-left,
+      class: ps,
+      values: $spacers-custom,
+    ),
+    // scss-docs-end utils-spacing
+    // Text
+    // scss-docs-start utils-text
+    "font-size":
+      (
+        rfs: false,
+        property: font-size,
+        class: fs,
+        values: $font-size-custom,
+      ),
+    "font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        light: $font-weight-light,
+        lighter: $font-weight-lighter,
+        normal: $font-weight-normal,
+        medium: $font-weight-medium,
+        bold: $font-weight-bold,
+        bolder: $font-weight-bolder,
+      ),
+    ),
+    "line-height": (
+      property: line-height,
+      class: lh,
+      values:
+        map-merge(
+          map-get(map-get($utilities, "line-height"), "values"),
+          ($line-height-custom)
+        ),
+    ),
+    // scss-docs-end utils-text
+    "rounded":
+      map-merge(
+        map-get($utilities, "rounded"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "rounded"), "values"),
+              ($border-radius-custom)
+            ),
+        )
+      ),
+    "rounded-top":
+      map-merge(
+        map-get($utilities, "rounded-top"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "rounded-top"), "values"),
+              ($border-radius-custom)
+            ),
+        )
+      ),
+    "rounded-bottom":
+      map-merge(
+        map-get($utilities, "rounded-bottom"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "rounded-bottom"), "values"),
+              ($border-radius-custom)
+            ),
+        )
+      ),
+    //end border-radius
+    "border-width":
+      (
+        property: border-width,
+        class: border,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "border-width"), "values"),
+            ($border-width-custom)
+          ),
+      )
+  )
+);

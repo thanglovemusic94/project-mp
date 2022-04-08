@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "carcloth-337408",
+  "private_key_id": "bcf192445891bdc7de2161b14cfa41844d064bf1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCVVbDUoU02wALF\nWEc1H2FVKmFXeJVuRxjyw7K4HRrnaR7xNzicAvwJ/YrX3EIHcU/YurTaRbzb1+zE\nwBGo3D99IGKGcBUcAx9x8VzaL2fTVjmidCKmtW9uofko98E7M+RwNXpUUDZv00l/\nnj2lwEtwrtcoc4JxFhgxx6U4NMkD/Edr2Z8XfF4Z2wKk3HR0MF/tcJ+OQ6Yz4JxH\nScId6MLnkWCSQ0RIqsuUZgFUym0pAUoSbslnpSo2MI38JFTMtUj4kuQgGDckszmD\nGuv1HX+vKJEiQ0ZUCtEy4FqLwpCVnfYiZSlSF5p8CoFNgOIMg3Bu1f9xdCmxc2mY\ncxIvPK03AgMBAAECggEAGwjq3Ougt2c2eTScm4zlSY5FFhlR8Cd16Ekuey9ltfwt\nalzlZjUSHNrmPmL1HzTP0DwozpUudhxWlF3zNH8/DS+GNrFm2O3lzPJ1rVhEsxla\nkML2nPiexkgTe+uycz3XPssnrMjiugbluPFUVsQDxFAayoty03c9BRIQIqdHtu03\nwe+jW55In5OAB6y8Nb1jxsbMMnIFcgBZG86qJfBNprllMK52O1lXo5TggUiU38tU\n1f1SqkfM9fFsuJTrld63F78rfaeZ1tBII4kM1FntLel/ekU6IhWq+AXlIKBK3ROs\nNfZJ99U6ScuQi5GCFDwLqudnYXjAtwhLam0k0/bbBQKBgQDMTzvi4paCuPK3qBhW\nrmx5RqqI+RDDFHRH5Fcy38GcLs43UztgC60wwzBdpLwli2n4xVE1VEpPnufNBR5S\n+K1Lp7lzeD2GsMizZfPV01z0NJzjhOyBsEYJ/vlSJUpl/Sdb+nKJA+1Qdr2eK/ZZ\nCmyW3caBOoc6QoYTOyeLLDss1QKBgQC7HdZmmC5ngJ91Ilu1M0QndxDERa7T44/z\nao7rBKmBsI0iXIt7CHL5E++cBkEA+aqYA0lYDpkQ3NGG011N0OrqVDLs6RRX08Tq\njwKilBgBpgIz767bsuM7nf/X1H37SnY1I/pEFS0aMeGsuMim8OPEvDO/OolrEvG6\nuZbY3JWH2wKBgQCTZNYfaLiMtkDknjBw2IUJOSHuj0C4fBknhGQkH6jdtCaxYyqC\nr+nSM/7AkAfsThe1kSR1BMpXhpxUHE00LpNW8TmpRCWe9grU4ch3inSU+R/2Q/8b\n0L+2lmvoB18VFP1ALf5TOrIKSp+hbLXcptiQPo7mzAKi1TtExHhSvyYxwQKBgE2a\nNk0eWEB8y6UctsQTmvRzIPUFoVgnTJA7ZUJ7EIHE4wOZNg+0lVpPtlQTE+p/oQyi\ncEyg4UJpEkzEZDHdr0+309cFY3Z5UXWmEgWzPbGRU+COSwq6yhrzkCPG8OjDHPs1\nDJon3ii6/0lO6Yiy5wO0uhFZCZzqom46giE2ep15AoGADeGNhxCY9jrtnrWlaglL\nph/rfaT2Zhzc6QMF9M7RZ9rFHPzw+jdxMa69t/9MtesNKZFVCK2GA3B6j46mLevo\njihzmNXomYazxV09UKPO4EqDaPPyC2BatSSGwVCmPtbTjPsMyuRDvTREc36xkdxh\nW0nEmeDp4lNFwEDcftx7Pj0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fdtvq@carcloth-337408.iam.gserviceaccount.com",
+  "client_id": "110769352665668417431",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fdtvq%40carcloth-337408.iam.gserviceaccount.com"
+}

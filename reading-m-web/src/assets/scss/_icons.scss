@@ -1,0 +1,466 @@
+[class^='lcicon'] {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.lcicon-dropClose,
+.lcicon-dropOpen {
+    width: 28px;
+    height: 28px;
+}
+.lcicon-dropClose {
+    background-image: url('../icons/drop_close.png');
+}
+
+.toggle-box .active .lcicon-dropClose {
+    background-image: url('../icons/drop_open_active.png');
+}
+.liveclass-goal .toggle-box .active .lcicon-dropClose {
+    background-image: url('../icons/drop_close_goal.png');
+}
+.lcicon-dropOpen {
+    background-image: url('../icons/drop_open.png');
+}
+
+.lcicon-plus-alt {
+    width: 16px;
+    height: 16px;
+    background-image: url('../icons/icon_add.png');
+}
+
+.lcicon-modalComplete {
+    width: 40px;
+    height: 40px;
+    background-image: url('../icons/modal_complete.png');
+}
+.lcicon-liveclassPlatform {
+    width: 50px;
+    height: 46px;
+    background-image: url('../icons/liveclass_platform.png');
+}
+.lcicon-tutorProcess {
+    width: 63px;
+    height: 60px;
+    background-image: url('../icons/tutor_process.png');
+}
+.lcicon-tutorApply {
+    width: 57px;
+    height: 54px;
+    background-image: url('../icons/tutor_apply.png');
+}
+.lcicon-liveclassIntroduction {
+    width: 44px;
+    height: 54px;
+    background-image: url('../icons/liveclass_introduction.png');
+}
+.lcicon-next,
+.lcicon-prev {
+    width: 48px;
+    height: 48px;
+}
+.lcicon-next-settlement {
+    width: 16px;
+    height: 16px;
+}
+.lcicon-next-settlement {
+    background-image: url('../icons/arrow_next.png');
+}
+.lcicon-next {
+    background-image: url('../icons/arrow_next.png');
+}
+.lcicon-prev {
+    background-image: url('../icons/arrow_prev.png');
+}
+.lcicon-student {
+    background-image: url('../icons/logo_student.png');
+    width: 52px;
+    height: 69px;
+}
+.lcicon-parent {
+    background-image: url('../icons/logo_parent.png');
+    width: 60px;
+    height: 63px;
+}
+.lcicon-tutor {
+    background-image: url('../icons/logo_tutor.png');
+    width: 59px;
+    height: 63px;
+}
+.lcicon-search {
+    background-image: url('../icons/search.png');
+    width: 24px;
+    height: 24px;
+}
+.lcicon-noresult {
+    background-image: url('../icons/noresult.png');
+    width: 84px;
+    height: 84px;
+}
+
+.lcicon-classGuide,
+.lcicon-classCurriculum {
+    width: 28px;
+    height: 28px;
+}
+.lcicon-classGuide {
+    background-image: url('../icons/class_guide.svg');
+}
+
+.toggle-box .active .lcicon-classGuide {
+    background-image: url('../icons/class_guide_active.svg');
+}
+
+.liveclass-goal .toggle-box .active .lcicon-classGuide {
+    background-image: url('../icons/class_guide_active_goal.png');
+}
+
+.lcicon-classCurriculum {
+    background-image: url('../icons/class_curriculum.svg');
+}
+.toggle-box .active .lcicon-classCurriculum {
+    background-image: url('../icons/class_curriculum_active.svg');
+}
+.liveclass-goal .toggle-box .active .lcicon-classCurriculum {
+    background-image: url('../icons/class_curriculum_active_goal.png');
+}
+
+[class^='lcicon-flag'] {
+    position: absolute;
+    color: #000;
+    font-family: $font-nanum;
+    font-weight: 800;
+    text-align: center;
+    line-height: 22px;
+    font-size: 16px;
+
+    @include media-breakpoint-down(md) {
+        font-size: 14px;
+    }
+}
+.lcicon-flag {
+    background-image: url('../icons/grade_flag.png');
+    width: 75px;
+    height: 90px;
+    padding: 15px 0;
+
+    @include media-breakpoint-down(md) {
+        background-image: url('../icons/grade_flag_mobile.png');
+        width: 65px;
+        height: 78px;
+        padding: 14px 0;
+    }
+}
+.lcicon-flag-big {
+    background-image: url('../icons/grade_flag_big.png');
+    width: 90px;
+    height: 108px;
+    padding: 25px 0;
+
+    @include media-breakpoint-down(md) {
+        width: 60px;
+        height: 75px;
+        padding: 10px 0;
+    }
+}
+
+.lcicon-secret {
+    background-image: url('../icons/secret.png');
+    width: 28px;
+    height: 28px;
+}
+.lcicon-upload {
+    background-image: url('../icons/icon_upload.png');
+    width: 24px;
+    height: 24px;
+}
+.lcicon-close-black {
+    background-image: url('../icons/close.png');
+    width: 12px;
+    height: 12px;
+}
+.lcicon-close {
+    background-image: url('../icons/close_white.png');
+    width: 12px;
+    height: 12px;
+}
+
+.lcicon-uncheck-white {
+    background-image: url('../icons/uncheck_white.svg');
+    width: 22px;
+    height: 22px;
+}
+.lcicon-check-white {
+    background-image: url('../icons/checked_white.svg');
+    width: 22px;
+    height: 22px;
+}
+
+.lcicon-tutorbook,
+.lcicon-tutorgoal {
+    width: 178px;
+    height: 178px;
+}
+.lcicon-tutorbook {
+    background-image: url('../icons/tutorbook.png');
+}
+.lcicon-tutorgoal {
+    background-image: url('../icons/tutorgoal.png');
+}
+.lcicon-tutorbook-confirm {
+    background-image: url('../icons/tutorbook_confirm.png');
+    width: 164px;
+    height: 164px;
+}
+
+[class^='lcicon-class-goal'] {
+    width: 100px;
+    height: 100px;
+}
+.lcicon-class-goal1 {
+    background-image: url('../icons/class_goal1.png');
+}
+.lcicon-class-goal2 {
+    background-image: url('../icons/class_goal2.png');
+}
+.lcicon-class-goal3 {
+    background-image: url('../icons/class_goal3.png');
+}
+.lcicon-class-goal4 {
+    background-image: url('../icons/class_goal4.png');
+}
+
+.lcicon-star {
+    background-image: url('../icons/star.png');
+    width: 30px;
+    height: 30px;
+
+    @include media-breakpoint-down(md) {
+        width: 18px;
+        height: 18px;
+    }
+}
+.lcicon-star-voted {
+    background-image: url('../icons/star_voted.png');
+    width: 30px;
+    height: 30px;
+    
+    @include media-breakpoint-down(md) {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.voted-1 {
+    .lcicon-star:nth-child(1) {
+        background-image: url('../icons/star_voted.png');
+    }
+}
+
+.voted-2 {
+    .lcicon-star:nth-child(1) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(2) {
+        background-image: url('../icons/star_voted.png');
+    }
+}
+
+.voted-3 {
+    .lcicon-star:nth-child(1) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(2) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(3) {
+        background-image: url('../icons/star_voted.png');
+    }
+}
+
+.voted-4 {
+    .lcicon-star:nth-child(1) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(2) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(3) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(4) {
+        background-image: url('../icons/star_voted.png');
+    }
+}
+.voted-5 {
+    .lcicon-star:nth-child(1) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(2) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(3) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(4) {
+        background-image: url('../icons/star_voted.png');
+    }
+    .lcicon-star:nth-child(5) {
+        background-image: url('../icons/star_voted.png');
+    }
+}
+
+.lcicon-notify {
+    background-image: url('../icons/notify.png');
+    width: 16px;
+    height: 16px;
+}
+
+.lcicon-notify-g700 {
+    background-image: url('../icons/notify-g700.png');
+    width: 16px;
+    height: 16px;
+}
+
+.lcicon-folder {
+    background-image: url('../icons/folder.png');
+    width: 22px;
+    height: 19px;
+}
+
+.lcicon-foldergray {
+    background-image: url('../icons/folder-gray.png');
+    width: 22px;
+    height: 19px;
+}
+
+.lcicon-pencil {
+    background-image: url('../icons/pencil.png');
+    width: 20px;
+    height: 20px;
+}
+
+.lcicon-pencilcolor {
+    background-image: url('../icons/pencil-color.png');
+    width: 20px;
+    height: 20px;
+}
+
+[class^='lcicon-attend'] {
+    background-image: url('../icons/attend.png');
+    width: 128px;
+    height: 128px;
+    background-size: auto;
+}
+.lcicon-attend.absent {
+    background-position: -256px 0;
+}
+.lcicon-attend.before {
+    background-position: -128px 0;
+}
+.lcicon-attend.complete {
+    background-position: 0 0;
+}
+[class^='lcicon-attend-mobile'] {
+    background-image: url('../icons/attend-mobile.png');
+    width: 100px;
+    height: 100px;
+    background-size: auto;
+}
+.lcicon-attend-mobile.absent {
+    background-position: -200px 0;
+}
+.lcicon-attend-mobile.before {
+    background-position: -100px 0;
+}
+.lcicon-attend-mobile.complete {
+    background-position: 0 0;
+}
+
+.lcicon-newspayper {
+    background-image: url('../icons/newspayper.png');
+    width: 20px;
+    height: 20px;
+}
+
+.lcicon-hear {
+    background-image: url('../icons/hear.png');
+    width: 22px;
+    height: 20px;
+}
+
+.icon-like {
+    background-color: $g200;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    &.liked {
+        background-color: #ff5656;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 56px;
+        height: 56px;
+
+        .lcicon-hear {
+            width: 29px;
+            height: 26px;
+        }
+    }
+}
+
+.lcicon-coupon {
+    background-image: url('../icons/coupon.png');
+    width: 28px;
+    height: 28px;
+}
+
+.lcicon-cashpoint {
+    background-image: url('../icons/cashpoint.png');
+    width: 24px;
+    height: 24px;
+}
+
+.lcicon-eventpoint {
+    background-image: url('../icons/eventpoint.png');
+    width: 24px;
+    height: 24px;
+}
+
+.lcicon-sort {
+    background-image: url('../icons/sort.png');
+    width: 12px;
+    height: 22px;
+}
+
+.lcicon-sort-1 {
+    background-image: url('../icons/sort-1.png');
+    width: 16px;
+    height: 34px;
+}
+
+.lcicon-download {
+    background-image: url('../icons/download.png');
+    width: 28px;
+    height: 28px;
+}
+
+.lcicon-maker {
+    background-image: url('../icons/maker.png');
+    width: 20px;
+    height: 24px;
+}
+.lcicon-navbar-menu {
+    background-image: url('../icons/navbar-menu.png');
+    width: 18px;
+    height: 12px;
+}
+.lcicon-btn-top {
+    width: 20px;
+    height: 11px;
+    background-image: url('../icons/btnTop.png');
+}

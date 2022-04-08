@@ -1,0 +1,124 @@
+.modalw-996 {
+    @include modal-width(996);
+}
+.modalw-590 {
+    @include modal-width(590);
+}
+.modalw-386 {
+    @include modal-width(386);
+}
+.modalh-800 .modal-content {
+    height: 800px !important;
+}
+.modalh-610 .modal-content {
+    height: 610px !important;
+}
+.modalh-540 .modal-content {
+    height: 540px !important;
+}
+.modalh-480 .modal-content {
+    height: 480px !important;
+}
+
+.modal-header {
+    height: 44px;
+    background-color: $g700;
+    .modal-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+    }
+}
+.modal-content {
+    height: 690px;
+    // overflow: hidden;
+    background: transparent;
+}
+.modal-body {
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 0 5px 0 0;
+
+    .modal-body-inner {
+        padding: 16px;
+        height: 100%;
+        overflow-y: auto;
+
+        @include scrollbars(6px, $g300, transparent);
+
+        &::-webkit-scrollbar-track {
+            margin: 20px;
+        }
+    }
+
+    .form-label {
+        font-size: 16px;
+    }
+}
+.modal-footer {
+    background-color: #fff;
+}
+.modal-comfirm {
+    .modal-content {
+        height: 200px;
+    }
+    .modal-body-inner {
+        background-color: #fff;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .modal-footer {
+        height: 56px;
+        padding: 0;
+    }
+}
+
+.modal-footer.modal-btn-half {
+    padding: 0;
+}
+.modal-btn-half {
+    .btn {
+        border-radius: 0;
+        height: 56px;
+        margin: 0;
+        flex: 1 1 50%;
+    }
+    .btn-white:first-child {
+        border-right: 1px solid $g200;
+    }
+}
+
+.modal-resetpass {
+    p {
+        font-size: 18px;
+        text-align: center;
+        margin: 50px 0 80px;
+    }
+    .modal-body {
+        padding: 0;
+    }
+    .modal-body-inner {
+        background-color: #fff;
+    }
+}
+
+.modal-mainpopup {
+    .modal-body {
+        padding: 0;
+    }
+}
+
+.label-header {
+    border-radius: 20px 20px 0px 0px;
+    color: #fff;
+    background-color: $m500;
+    padding: 12px 65px;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    top: -10px;
+}
+.modal-dialog {
+    margin: auto;
+}

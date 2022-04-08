@@ -1,0 +1,72 @@
+server:
+  use-forward-headers: true
+#### spring config ####
+spring:
+# datasource config
+  datasource:
+    url: jdbc:mariadb://carcloth-db-prd.cckeyiyhojnc.ap-northeast-2.rds.amazonaws.com:3306/carcloth_backend
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: admin
+    password: qwerty0!
+# jpa config
+  jpa:
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.MariaDBDialect
+#    properties:
+#     hibernate.format_sql: true
+#    show-sql: true
+# servlet config
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+# quartz config
+  quartz:
+    overwrite-existing-jobs: true
+    scheduler-name: CompanyUsageGuideScheduler
+    properties:
+      org:
+        quartz:
+          threadPool:
+            threadCount: 5
+#### app config #####
+# JWT info
+jwt:
+  secret: NzxCjvoG0GcqoNksTqc5RfUmK8fyADsoWwYxhizSx01fxEmBJiGRSHQdPUFEfbw
+# Duration of access token, measured in seconds.
+  accessToken:
+    duration: 604800 # 604800 seconds = 7 days
+  refreshToken:
+    duration: 2592000 # 2592000 seconds = 30 days
+# config bean storage
+mintpot:
+  storage: com.mintpot.carcloth.utils.S3StorageServiceImpl
+# firebase config
+firebase:
+  dbUrl: https://carcloth-337408-default-rtdb.asia-southeast1.firebasedatabase.app
+  admin-config: firebase-admin-prd.json
+
+#### logging config #####
+logging:
+  level:
+    org.springframework.scheduling.quartz: DEBUG
+### AWS S3 ####
+amazonProperties:
+  accessKey: AKIA2YY4ZLNTXCAYEXVR
+  secretKey: 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
+  region: ap-northeast-2
+  bucket: car-cloth
+  presigned:
+    durationM: 2  #2 minutes
+
+appstore:
+  baseurl: https://sandbox.itunes.apple.com
+# appstore:
+#  baseurl: https://buy.itunes.apple.com
+
+# SolApi configs
+solapi:
+  caller-id: "01029565931"
+  api-key: NCS7XMCTRK3FFKHV
+  api-secret: VC8LFBZ3EHFRYDX2NWMLWLHC442HZMCM

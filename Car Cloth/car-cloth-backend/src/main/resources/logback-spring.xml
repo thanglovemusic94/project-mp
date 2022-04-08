@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<springProfile name="dev">
+		<appender name="console"
+			class="ch.qos.logback.core.ConsoleAppender">
+			<layout class="ch.qos.logback.classic.PatternLayout">
+				<pattern> %highlight(%-5level) %cyan(%logger{15}):%m%n%throwable</pattern>
+			</layout>
+		</appender>
+		<root level="info">
+			<appender-ref ref="console" />
+		</root>
+		<logger name="com.mintpot.carcloth" level="debug"
+			additivity="false">
+			<appender-ref ref="console" />
+		</logger>
+	</springProfile>
+
+	<springProfile name="stg,prd">
+		<property name="LOGS" value="./logs" />
+		<appender name="RollingFile"
+			class="ch.qos.logback.core.rolling.RollingFileAppender">
+			<file>${LOGS}/carcloth-backend.log</file>
+			<encoder
+				class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+				<Pattern>%d|%X{REQUEST_ID}|%p|%C{1.}| %m%n</Pattern>
+			</encoder>
+			<rollingPolicy
+				class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+				<!-- rollover daily and when the file reaches 10 MegaBytes -->
+				<fileNamePattern>${LOGS}/archived/carcloth-backend-%d{yyyy-MM-dd}.%i.log
+				</fileNamePattern>
+				<timeBasedFileNamingAndTriggeringPolicy
+					class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+					<maxFileSize>10MB</maxFileSize>
+				</timeBasedFileNamingAndTriggeringPolicy>
+			</rollingPolicy>
+		</appender>
+		<appender name="fileRequestLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+			<file>${LOGS}/requests.log</file>
+			<encoder
+					class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+				<Pattern>%d|%X{REQUEST_ID}| %m%n</Pattern>
+			</encoder>
+			<rollingPolicy
+					class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+				<!-- rollover daily and when the file reaches 10 MegaBytes -->
+				<fileNamePattern>${LOGS}/archived/requests-%d{yyyy-MM-dd}.%i.log
+				</fileNamePattern>
+				<timeBasedFileNamingAndTriggeringPolicy
+						class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+					<maxFileSize>10MB</maxFileSize>
+				</timeBasedFileNamingAndTriggeringPolicy>
+			</rollingPolicy>
+		</appender>
+		<root level="info">
+			<appender-ref ref="RollingFile" />
+		</root>
+		<logger name="com.mintpot.carcloth" level="debug"
+			additivity="false">
+			<appender-ref ref="RollingFile" />
+		</logger>
+	</springProfile>
+</configuration>

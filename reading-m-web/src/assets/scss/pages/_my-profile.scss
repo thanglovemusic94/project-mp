@@ -1,0 +1,88 @@
+.modal-changepassword {
+    .text-top {
+        width: 270px;
+        margin: 20px auto;
+    }
+}
+
+.mymathdavinci-section,
+.myclassgoal-section,
+.myclassbook-section {
+    .tablelist-header {
+        padding: 0 30px;
+    }
+    .tablelist-row {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+.myclass-body {
+    .nav-tabs-radius {
+        .nav-link {
+            width: 168px;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// My Math Davinci Detail
+.tablelist {
+    .lecture-status {
+        color: $g300;
+
+        &.done {
+            color: #000;
+        }
+        &.inprogress {
+            color: $m500;
+        }
+    }
+}
+.mymathdavincidetail-section {
+    .lecture-video-title {
+        font-size: 16px;
+        padding: .5em 0 .5em 1em;
+        background-color: #c7c7ca;
+    }
+
+    .course-infor {
+        margin: 4em 0 0 0;
+        padding: 0 0 1em 2em;
+
+        .class-name {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: $font-family-base;
+        }
+    
+        .course-target {
+            font-size: 14px;
+            color: $g700;
+        }
+    }
+
+    
+
+}
+
+@include media-breakpoint-up(lg) {
+    // My Math Davinci Detail
+
+    .mymathdavincidetail-section {
+        .lecture-video-title {
+            font-size: 30px;
+        }
+
+        .course-infor {   
+            .class-name {
+                font-size: 24px;
+            }
+            .course-target {
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+variables:
+  EXTERNAL_PORT: 50000
+  INTERNAL_PORT: 8080
+
+
+build-stg:
+  script:
+    - mvn clean package
+    - docker build -t $CI_PROJECT_NAME .
+    - if ((docker ps -f "name=$CI_PROJECT_NAME" --format "{{.Names}}") -eq $CI_PROJECT_NAME) { docker stop $CI_PROJECT_NAME }
+    - docker run --rm -d -p ${EXTERNAL_PORT}:${INTERNAL_PORT} --name=$CI_PROJECT_NAME $CI_PROJECT_NAME
+  rules:
+    - if: '$CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"'
+      when: always
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+      when: manual

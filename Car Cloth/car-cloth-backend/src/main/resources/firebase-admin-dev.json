@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "car-cloth",
+  "private_key_id": "5f76d310e5e614ad327ac6535ee073fa53951034",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQtMKbMOVS6oPI\nAUt2LP4DKtzLtmfeczypba8v18AiAh/gh59b3NzswRC49sPYQ9r3EhNrOq5cslzb\nGSPqOKszQBCxHw3Di4P7UUa+M6XIO5ejsRNPPYQJmqIsrXYBH6wNnezCrzD43dlh\nmG4GUq7sP54GVeHtt6aHO5ax3Sx8ijBkohwDABctcB3omb4MfrPJVDK/3jPggRu0\nBojF6LR5cyic4gCv2CJhnLkzwsjSfaN7KT3+OiDdNBxn/RiVJqo3VzGfk6zDem0/\n/+z03Bdu9vvCbF+6JKm75A03qVPOPSJxQ0/fvCQ72vQJFroZduhGlfXhwGvO+w/I\ncI+/HBIHAgMBAAECggEAA+IxMtkUk1foztpzUIYizeVIyYOh6CpFyTNQzLebjCZ0\n+GUdqoRwGfm3uXFiEI6mru1Hrjmfz/rDrpIHsI6QZPo+tUUKKQbaFF2dTuHAJnsx\nZargXJuc7t7RQLqTlQ7FUVWMd8zxwNfD+URwW67DMYM3ig+kDhvaPe72bWXbs4+I\nHXE+vDPt+AzTCUPf2sZJilMWUS4qC8q7rslWg547r0UCb5GRfNc6Hjmi7CNS/c/W\n7mA8RW/4Tnpok0QjNa+PR9cGvnPdsmy0S2JDPj+63H0zKkYxQrBnhqlp5cfqjNw/\n7EwInhVzr3nU1S9EcyZ7zckoJzJ1owPl7WTkdMo+MQKBgQDyDeItUPRawbBvuNEp\nsSSRBvlDbJpfe0xVmTV8N0Y/sK/38c4ENna0nuMcOl8O1EIYFsWwo7MCfa6ohj8L\nDD1s3FyGpR4Iea5vOnY3x/8oWUFf9fKNxGXbwisQAAMpL3ETBoJjR7mjehW9ISvd\n8QjKNsOyjJoHqkHIiTvKAbZ38QKBgQDcuwRUaecsaymRaJYRcGtjZEiJdPYcaGa9\nmUpSJ9No0W733jF37Wwkt8F0S/Ev1faIuQ62dkq2/1TzDtS6wfQOxhR4fxty5UPP\n0f1z/fN6N5lXeXtIRqK8HkMAHY2JPLNVuymxed8TFnhsU+a9AHQ2/GlrdVlv54Ys\noWHv5VhhdwKBgBC5RNc8sKVUnIwbiNgIlS4v/SjbaA8QxcVkQH3Ek+XynzXSTxmb\nabgxAiABKHAt2iMv75i0trmFVXvvSovI3LWYxAvJfLm5LoQg1eokt0xiXlHy/D8v\nQppcX/1LAuzlijp2SKvzWLAizz2x/QXokWLnRb4gWMQOz1y7npXmaGUBAoGALWhj\nqaHnpqGc+YbUaF4CGX5F1dEz2AA6MoLYYTJEMWn0NBWHg65Z8uvCZlRBF6AiiVnY\nhvyqvh6ksSO563l+5ZMmHuu3D9nOK3B9fWEet2O8rdwV2nZ9f8mR6vIpbbQJCHfq\nSdJSa7DRsSdJblQrlCw026BWd8jfN0szxJAfsF0CgYEAuvIxqVTqm3zrywgQYQGx\nUiqyzfHailJpuYWVwNYWz93R8fIcoM4Wt52g4mIByMUQEqbN6ivLbbkDEkteV/y1\nNTXvocDrNMMZPBSbNDNtBzEQ/4WQB0XDWSufIQMW0++rCuvxpkRzAIXP0BknX/ae\n6B42n6l5o2OQISlKX7rYRz0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-qcmdl@car-cloth.iam.gserviceaccount.com",
+  "client_id": "115655409921698101362",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qcmdl%40car-cloth.iam.gserviceaccount.com"
+}

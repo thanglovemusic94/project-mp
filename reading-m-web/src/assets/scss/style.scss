@@ -1,0 +1,33 @@
+// If you want to override variables do it here
+@import 'mixins';
+@import 'variables';
+
+@import '~bootstrap/scss/bootstrap';
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+@import '~react-datepicker/dist/react-datepicker.css';
+
+// If you want to add something do it here
+@import 'icons';
+@import 'col5ths';
+@import 'box';
+@import 'tabs';
+@import 'fonts';
+@import 'header';
+@import 'footer';
+@import 'buttons';
+@import 'modals';
+@import 'form';
+@import 'datepicker';
+@import 'table';
+@import 'slick';
+@import 'localnavbar';
+@import 'magazine-card';
+@import 'tutor-card';
+@import 'table-list';
+@import 'booklist';
+@import 'applist';
+@import 'myclassdetails';
+@import 'pages';
+
+@import 'custom';

@@ -1,0 +1,37 @@
+package com.mintpot.solapi.utils;
+
+import com.mintpot.pii.exception.BusinessException;
+import com.mintpot.pii.exception.error.ErrorCode;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.crypto.codec.Hex;
+import org.springframework.stereotype.Component;
+
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.nio.charset.StandardCharsets;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+@Component
+public class HmacUtils {
+
+    @Value("${solapi.client-secret}")
+    private String SOLAPI_CLIENT_SECRET;
+
+    public String generateHmac256(String message) {
+        var key = SOLAPI_CLIENT_SECRET.getBytes(StandardCharsets.UTF_8);
+
+        byte[] bytes = hmac("HmacSHA256", key, message.getBytes(StandardCharsets.UTF_8));
+        return new String(Hex.encode(bytes));
+    }
+
+    byte[] hmac(String algorithm, byte[] key, byte[] message) {
+        try {
+            Mac mac = Mac.getInstance(algorithm);
+            mac.init(new SecretKeySpec(key, algorithm));
+            return mac.doFinal(message);
+        } catch (NoSuchAlgorithmException | InvalidKeyException e) {
+            throw new BusinessException(ErrorCode.INTERNAL_SERVER_ERROR, e);
+        }
+    }
+}

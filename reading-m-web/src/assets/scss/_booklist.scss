@@ -1,0 +1,55 @@
+.bookcalendar-search {
+    .form-control-dropdown {
+        margin-right: 8px;
+    }
+    .btn-search {
+        width: 100px;
+        border-radius: 3px;
+    }
+    @include media-breakpoint-down(md) {
+        .form-control-dropdown {
+            margin-right: 0;
+        }
+        .btn-search {
+            width: 100%;
+        }
+    }
+}
+.booklist__calendar {
+    padding: 30px 0;
+}
+
+@include media-breakpoint-down(md) {
+    .booklist__photo {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 46px;
+        height: 64px;
+        object-fit: contain;
+        margin: 0 15px;
+    }
+    .booklist__author {
+        text-align: left;
+        font-size: 14px;
+    }
+    .booklist__grade {
+        font-size: 14px;
+        margin-top: -25px;
+    }
+    .booklist {
+        .tablelist-body .tablelist-row {
+            padding-left: 75px;
+            height: auto;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .booklist__photo {
+        margin: 0 50px;
+        width: 70px;
+        height: 98px;
+        object-fit: contain;
+    }
+}

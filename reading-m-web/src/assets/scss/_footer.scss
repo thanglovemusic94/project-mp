@@ -1,0 +1,109 @@
+.lc-footer {
+    background-color: $g700;
+    padding: 45px 0 70px;
+    color: #fff;
+    height: 320px;
+}
+.lc-backtop {
+    background: #ffffff;
+    border: 1px solid $g300;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 50%;
+    color: $g700;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    cursor: pointer;
+}
+.footer-top {
+    margin-bottom: 50px;
+}
+.footer-title {
+    color: $g300;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer-contact,
+.footer-copyright {
+    color: #929292;
+    font-size: 14px;
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+}
+.footer-nav {
+    font-weight: 500;
+    color: #fff;
+
+    ul {
+        @include reset-list;
+    }
+
+    li {
+        padding: 0 20px;
+        border-right: 1px solid $g300;
+        line-height: 1;
+
+        @include media-breakpoint-up(lg) {
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+    a {
+        color: #fff;
+        &:hover {
+            color: #929292;
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .footer-top {
+        margin-bottom: 29px;
+    }
+    .lc-footer {
+        height: 380px;
+    }
+    .footer-logo {
+        text-align: center;
+        margin-bottom: 26px;
+    }
+    .footer-title {
+        font-size: 14px;
+    }
+    .footer-contact {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    .footer-copyright {
+        font-size: 12px;
+    }
+    .footer-nav {
+        ul {
+            flex-wrap: wrap;
+            width: 100%;
+            border-style: solid;
+            border-color: $g500;
+            border-width: 1px 0 0 1px;
+        }
+        li {
+            text-align: center;
+            padding: 10px 0;
+            width: 50%;
+            border-style: solid;
+            border-color: $g500;
+            border-width: 0 1px 1px 0;
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}

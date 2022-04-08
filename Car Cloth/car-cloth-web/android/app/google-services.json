@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "61254803402",
+    "project_id": "carcloth-337408",
+    "storage_bucket": "carcloth-337408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61254803402:android:cf0e327befc07e2ce17933",
+        "android_client_info": {
+          "package_name": "com.carcloth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61254803402-msegjg0dcm1qr7h24483vi3jm2bfv8bb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.carcloth",
+            "certificate_hash": "0434d35bc561d45b0ea2d6f3d041dbbe00de9558"
+          }
+        },
+        {
+          "client_id": "61254803402-chgehg0asu9pmbt76ddao5d4sa0m32ou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM7-RntJKyuqxfBQBSLyoT9VYnfubFbU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61254803402-chgehg0asu9pmbt76ddao5d4sa0m32ou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

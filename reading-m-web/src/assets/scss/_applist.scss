@@ -1,0 +1,47 @@
+.answer-closed-label {
+    width: 40px;
+    height: 24px;
+    line-height: 24px;
+    background-color: $g500;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 10px;
+    float: left;
+}
+
+.answer-closed-content {
+    overflow: hidden;
+}
+
+@include media-breakpoint-down(md) {
+    .application-cate {
+        text-align: left;
+    }
+    .applicationlist-section {
+        .tablelist-body .tablelist-row {
+            min-height: 78px;
+        }
+        .application-title {
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .applicationlist-section {
+        .tablelist-row-collapse {
+            .tablelist-row {
+                padding-left: 40px;
+            }
+        }
+    }
+    .application-tutorname {
+        .answer-closed-label {
+            display: none;
+        }
+    }
+}

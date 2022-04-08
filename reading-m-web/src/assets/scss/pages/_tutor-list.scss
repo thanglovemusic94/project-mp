@@ -1,0 +1,73 @@
+/* Tutor list page
+=================================== */
+
+.filter-section {
+    margin-bottom: 60px;
+    // .dropdown-toggle {
+    //     height: 44px;
+    //     margin-right: 8px;
+    //     &::after {
+    //         right: 5px;
+    //     }
+    // }
+}
+
+.filter-grade {
+    display: flex;
+    .form-check-input {
+        display: none;
+        &:checked ~ .form-check-label {
+            background-color: $m500;
+            border-color: #0095a4;
+            color: #fff;
+        }
+    }
+    .form-check-label {
+        background: #fff;
+        border: 1px solid #fff;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+        border-radius: 50px;
+        padding: 0 15px;
+        color: $g700;
+    }
+}
+
+.filter-top {
+    margin-bottom: 20px;
+}
+
+.search-noresult {
+    padding: 50px 0;
+    text-align: center;
+    p {
+        font-size: 22px;
+        margin: 20px 0;
+        color: $g500;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .filter-top {
+        margin-bottom: 8px;
+    }
+    .react-datepicker-wrapper {
+        width: 100%;
+    }
+    .filter-grade {
+        .form-check {
+            width: 25%;
+        }
+        .form-check-label {
+            border-radius: 5px;
+            font-size: 15px;
+            line-height: 18px;
+            height: 56px;
+            text-align: center;
+            padding: 8px;
+            width: 100%;
+            @include flex-center;
+        }
+    }
+}
